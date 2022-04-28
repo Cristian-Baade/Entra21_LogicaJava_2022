@@ -11,6 +11,8 @@ public class Main {
 		
 		//aniversario
 	
+
+	/*	
 	idade = idade+1; //20
 	System.out.println(idade);
 	
@@ -49,7 +51,7 @@ public class Main {
     
     idade=idade-10;
     System.out.println(idade);
-    
+  */  
     
 	}
 
