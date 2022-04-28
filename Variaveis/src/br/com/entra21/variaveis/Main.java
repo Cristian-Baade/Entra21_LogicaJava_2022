@@ -83,10 +83,8 @@ public class Main {
 
 
     		  
-    		  final byte IDADE;
-    		  idade=19;
-    		  
-    		  IDADE=29;
+    		  final byte IDADE=29;
+    		 
     		  
 	}
 	
