@@ -9,7 +9,7 @@ public class Main {
 
 		System.out.println("Operadores Aritméticos");
    
-		System.out.println("Realizando uma soma"+ (1+7));
+		System.out.println("Realizando uma soma "+ (1+7));
 		System.out.println(4+10);
 		
 		Float numeroA,numeroB;

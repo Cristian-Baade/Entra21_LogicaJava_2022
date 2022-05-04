@@ -22,7 +22,7 @@ String resposta;
 Scanner entrada = new Scanner(System.in);
 
 
-resposta = entrada.nextLine();
+resposta = entrada.nextLine().toString().toLowerCase();
 switch(resposta) {
 
 case "verde":	
