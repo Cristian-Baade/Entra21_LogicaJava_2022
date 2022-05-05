@@ -25,6 +25,8 @@ public class Main {
 		
 		opcao = entrada.next();
 		
+		
+		
 		 System.out.println("Digite o primeiro numero: ");
 	        numero1 = entrada.nextFloat();
 		
