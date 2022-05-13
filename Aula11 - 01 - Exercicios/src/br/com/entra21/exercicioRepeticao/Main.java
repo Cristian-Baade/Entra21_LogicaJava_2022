@@ -40,7 +40,11 @@ public class Main {
 				break;
 
 			case 5:
-exibirMaisNovo();
+				exibirMaisNovo();
+				break;
+				
+			case 6:
+				
 				break;
 
 			default:
@@ -115,14 +119,12 @@ exibirMaisNovo();
 
 	}
 
-
-
 	public static void exibirMaisNovo() {
 		Scanner entrada = new Scanner(System.in);
-		String name, youngerName;
-		byte age, ageMinimal;
+		String name, youngerName = null;
+		byte age, ageMinimal = 0;
 		
-		for( count=1, count<=10, count++) {
+		for(byte count=1; count<=10; count++) {
 		
 	
 			System.out.println("Digite seu nome: ");
@@ -132,26 +134,20 @@ exibirMaisNovo();
 		 
 			if(count ==1) {
 				ageMinimal = age;
-				
+				youngerName = name;
+				System.out.println("Sou o primeiro por isso sou o mais novo "+name);
 			}else {
 				
 				
 				if(age < ageMinimal) {
+					System.out.println("Ainda bem que testei porque a pessoa mais nova é "+name+" com "+age+ " anos");
 					ageMinimal = age;
 					youngerName = name;
 				}
 			}
 		}
+		System.out.println("Após isso tudo o mais novo é: "+youngerName+" "+ageMinimal);
 	}
+	
+	public static void 
 }
-
-
-				
-				
-			
-		
-		
-		
-	
-		
-	
