@@ -15,6 +15,9 @@ public class Main {
 			System.out.println("3 - Entre 20 pessoas exibir a soma das idades");
 			System.out.println("4 - entre 20 pessoas exibir os maiores de idade");
 			System.out.println("5 - Exibir mais novo");
+			System.out.println("6 - ");
+			System.out.println("7 -");
+			System.out.println("8 - Exercicio08");
 			System.out.println("0 - \"Sair");
 			option = entrada.nextByte();
 			switch (option) {
@@ -45,6 +48,14 @@ public class Main {
 				
 			case 6:
 				
+				break;
+				
+			case 7:
+				
+				break;
+				
+			case 8:
+				exerciseOito();
 				break;
 
 			default:
@@ -149,5 +160,40 @@ public class Main {
 		System.out.println("Após isso tudo o mais novo é: "+youngerName+" "+ageMinimal);
 	}
 	
-	public static void 
+	 public static void exerciseOito() {
+
+		 
+
+	        // Escreva um algoritmo que leia uma sequência de números do usuário e realize a
+	        // soma desses números. Encerre a execução quando um número negativo for
+	        // digitado.
+
+	 
+
+	        Scanner inPut = new Scanner(System.in);
+	        int number, sum = 0; // se não inicializa um valor na váriavel ela fica com lixo da memória.
+
+	 
+
+	        do {
+
+	 
+
+	            System.out.println("What number do you want?");
+	            number = inPut.nextInt();
+	            if (number >= 0) {
+	                sum = sum + number;
+	            } // somente números positivos serão somados, ou números naturais.
+
+	 
+
+	        } while (number >= 0); // enquanto o número for maior que zero repita
+
+	 
+
+	        System.out.println("Your sum is: " + sum);
+
+	 
+
+	    }
 }
