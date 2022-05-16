@@ -6,67 +6,86 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.out.println("Condicionais - switch");
-		
-System.out.println("serve para escolher entre opç~eos pré definidas");
-	
-System.out.println("Geralmente quando há muitos if elses ifs baseados em igualdade");	
-	
+		System.out.println("Condicionais - switch");
 
-float altura= 1.5f;
+		System.out.println("serve para escolher entre opç~eos pré definidas");
 
-if(altura== 1.0) {
-	System.out.println("é baixinho");
-}else if(altura ==1.2) {
-	System.out.println("continua baixinho");
-}else if(altura == 1.5) {
-	System.out.println("Baixinho mas nem tanto");
-}else {
-	System.out.println("já não é considerado baixinho");	
-}
-System.out.println("1 = Intervalo");
-System.out.println("2 = Exercicio");
-System.out.println("3 = Prova");
-Scanner entrada = new Scanner(System.in);
-byte opcao=3;	
-System.out.println("Escolha a op 3 se tiver coragem");
-opcao = entrada.nextByte();
+		System.out.println("Geralmente quando há muitos if elses ifs baseados em igualdade");
 
-switch(opcao) {
-case 1:
-	System.out.println("Vamos pára o intervalo");
-	break;
+		float altura = 1.5f;
 
-case 2:
-	System.out.println("Daqui a pouco tem exercicio");
-	break;
+		if (altura == 1.0) {
+			System.out.println("é baixinho");
+		} else if (altura == 1.2) {
+			System.out.println("continua baixinho");
+		} else if (altura == 1.5) {
+			System.out.println("Baixinho mas nem tanto");
+		} else {
+			System.out.println("já não é considerado baixinho");
+		}
+		System.out.println("1 = Intervalo");
+		System.out.println("2 = Exercicio");
+		System.out.println("3 = Prova");
+		Scanner entrada = new Scanner(System.in);
+		byte opcao = 3;
+		System.out.println("Escolha a op 3 se tiver coragem");
+		opcao = entrada.nextByte();
 
-case 3:
-	System.out.println("Era dia 5 mas podemos fazer hj");
-	break;
-}
+		switch (opcao) {
+		case 1:
+			System.out.println("Vamos pára o intervalo");
+			break;
 
-String resposta;
+		case 2:
+			System.out.println("Daqui a pouco tem exercicio");
+			break;
 
-System.out.println("Queremos intervalo?");
-resposta = entrada.nextLine();
+		case 3:
+			System.out.println("Era dia 5 mas podemos fazer hj");
+			break;
+		}
 
-switch(resposta) {
+		String resposta;
 
-case "sim":
-	System.out.println("Hj foi na HR");
-	break;
-	
-case "não":	
-    System.out.println("Esperar mais um pouco");
-    break;
+		System.out.println("Queremos intervalo?");
+		resposta = entrada.nextLine();
 
-    default:
-    	System.out.println("era uma pergunta tão simples...");
-    break;	
-    
-    
-}
+		switch (resposta) {
+
+		case "sim":
+			System.out.println("Hj foi na HR");
+			break;
+
+		case "não":
+			System.out.println("Esperar mais um pouco");
+			break;
+
+		default:
+			System.out.println("era uma pergunta tão simples...");
+			break;
+
+		}
+
+		System.out.println("Escolha um numero");
+		System.out.println("1 = azul");
+		System.out.println("2 = vermelho");
+		System.out.println("nenhuma = nenhuma");
+		resposta = entrada.next();
+
+		switch (resposta) {
+		case "1":
+			System.out.println("azul é bom, mas nada contra quem gosta de vermelho");
+			break;
+		case "2":
+			break;
+		case "nenhuma":
+			break;
+		default:
+			System.out.println("opção invalida");
+			break;
+
+		}
+
 	}
-	
+
 }

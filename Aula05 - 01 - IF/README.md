@@ -1,14 +1,9 @@
-# aprendendo sobre operadores lógicos
+# Aprendendo sobre condicional if
 
-## tipos
+## Serve para tomar decisões no codigo com base em condições
 
-> - E AND && = comparação entre booleans mais restritivos
-
- | A | B | RESULTADO |
- |---|---|-----------|
- | T | T |     T     |
- | T | F |     F     |
- | F | T |     F     |
- | F | F |     F     |
- 
-> - OU OR || = (comparação entre booleans) mais inclusivo conforme  
+````java
+if(condicao){
+ //conjunto de codigos executados quando a condção resulta em true
+}
+````

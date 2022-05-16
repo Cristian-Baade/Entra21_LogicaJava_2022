@@ -6,47 +6,45 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.out.println("Capturar 2 numeros e informar qual é o maior");
+		System.out.println("Capturar 2 numeros e informar qual é o maior");
 
-Scanner entrada = new Scanner(System.in);
-byte numeroA,numeroB;
+		Scanner entrada = new Scanner(System.in);
+		byte numeroA, numeroB;
 
-System.out.println("informe o valor do numero A");
-numeroA = entrada.nextByte();
+		System.out.println("informe o valor do numero A");
+		numeroA = entrada.nextByte();
 
-System.out.println("informe o valor do numero B");
-numeroB = entrada.nextByte();
+		System.out.println("informe o valor do numero B");
+		numeroB = entrada.nextByte();
 
-if( numeroA > numeroB) {// 5 > 5
-    System.out.println("NumeroA é maior");
-}else if(numeroA == numeroB) {
-System.out.println("São iguais");
+		if (numeroA > numeroB) {// 5 > 5
+			System.out.println("NumeroA é maior");
+		} else if (numeroA == numeroB) {
+			System.out.println("São iguais");
 
-}else {
-		System.out.println("NumeroB é maior");
-	}
+		} else {
+			System.out.println("NumeroB é maior");
+		}
 
+		System.out.println("=========================");
 
-System.out.println("=========================");
+		System.out.println("Capturar ano de nascimento e informar se já tem idade para votar");
 
-System.out.println("Capturar ano de nascimento e informar se já tem idade para votar");
+		short anoNascimento;
+		short calculo;
 
-short anoNascimento;
-short calculo;
+		System.out.println("Informe ano de nascimento");
+		anoNascimento = entrada.nextShort();
 
-System.out.println("Informe ano de nascimento");
-anoNascimento = entrada.nextShort();
+		calculo = (short) (2022 - anoNascimento);
 
-	calculo = (short) (2022-anoNascimento);
-	
-	if(calculo>15) {
-		System.out.println("Tem idade para votar");
-	}else {
-		System.out.println("Ta cedo ainda vai brincar");
-	}
-	
-	System.out.println(calculo>=16?"Já pode votar":"Não pode votar");
-	
-	
+		if (calculo > 15) {
+			System.out.println("Tem idade para votar");
+		} else {
+			System.out.println("Ta cedo ainda vai brincar");
+		}
+
+		System.out.println(calculo >= 16 ? "Já pode votar" : "Não pode votar");
+
 	}
 }

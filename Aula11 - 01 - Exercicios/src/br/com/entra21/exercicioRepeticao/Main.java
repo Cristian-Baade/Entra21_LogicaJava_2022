@@ -45,15 +45,15 @@ public class Main {
 			case 5:
 				exibirMaisNovo();
 				break;
-				
+
 			case 6:
-				
+
 				break;
-				
+
 			case 7:
-				
+
 				break;
-				
+
 			case 8:
 				exerciseOito();
 				break;
@@ -134,66 +134,51 @@ public class Main {
 		Scanner entrada = new Scanner(System.in);
 		String name, youngerName = null;
 		byte age, ageMinimal = 0;
-		
-		for(byte count=1; count<=10; count++) {
-		
-	
+
+		for (byte count = 1; count <= 10; count++) {
+
 			System.out.println("Digite seu nome: ");
 			name = entrada.nextLine();
-			System.out.println(name+ " por favor, digite sua idade:");
+			System.out.println(name + " por favor, digite sua idade:");
 			age = entrada.nextByte();
-		 
-			if(count ==1) {
+
+			if (count == 1) {
 				ageMinimal = age;
 				youngerName = name;
-				System.out.println("Sou o primeiro por isso sou o mais novo "+name);
-			}else {
-				
-				
-				if(age < ageMinimal) {
-					System.out.println("Ainda bem que testei porque a pessoa mais nova é "+name+" com "+age+ " anos");
+				System.out.println("Sou o primeiro por isso sou o mais novo " + name);
+			} else {
+
+				if (age < ageMinimal) {
+					System.out.println(
+							"Ainda bem que testei porque a pessoa mais nova é " + name + " com " + age + " anos");
 					ageMinimal = age;
 					youngerName = name;
 				}
 			}
 		}
-		System.out.println("Após isso tudo o mais novo é: "+youngerName+" "+ageMinimal);
+		System.out.println("Após isso tudo o mais novo é: " + youngerName + " " + ageMinimal);
 	}
-	
-	 public static void exerciseOito() {
 
-		 
+	public static void exerciseOito() {
 
-	        // Escreva um algoritmo que leia uma sequência de números do usuário e realize a
-	        // soma desses números. Encerre a execução quando um número negativo for
-	        // digitado.
+		// Escreva um algoritmo que leia uma sequência de números do usuário e realize a
+		// soma desses números. Encerre a execução quando um número negativo for
+		// digitado.
 
-	 
+		Scanner inPut = new Scanner(System.in);
+		int number, sum = 0; // se não inicializa um valor na váriavel ela fica com lixo da memória.
 
-	        Scanner inPut = new Scanner(System.in);
-	        int number, sum = 0; // se não inicializa um valor na váriavel ela fica com lixo da memória.
+		do {
 
-	 
+			System.out.println("What number do you want?");
+			number = inPut.nextInt();
+			if (number >= 0) {
+				sum = sum + number;
+			} // somente números positivos serão somados, ou números naturais.
 
-	        do {
+		} while (number >= 0); // enquanto o número for maior que zero repita
 
-	 
+		System.out.println("Your sum is: " + sum);
 
-	            System.out.println("What number do you want?");
-	            number = inPut.nextInt();
-	            if (number >= 0) {
-	                sum = sum + number;
-	            } // somente números positivos serão somados, ou números naturais.
-
-	 
-
-	        } while (number >= 0); // enquanto o número for maior que zero repita
-
-	 
-
-	        System.out.println("Your sum is: " + sum);
-
-	 
-
-	    }
+	}
 }

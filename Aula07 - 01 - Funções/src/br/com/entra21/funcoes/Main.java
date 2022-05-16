@@ -18,13 +18,13 @@ public class Main {
 		System.out.println("12 - Exercicio2");
 		opcao = entrada.nextLine();
 		switch (opcao.toLowerCase()) {
-	case "1":
-	case "procedimento":
+		case "1":
+		case "procedimento":
 			verProcedimentos();
 			verProcedimentos();
 			break;
-	case "2":
-	case "parametros":
+		case "2":
+		case "parametros":
 			verParametros(2);// como argumento passei o valor 2 para o metodo
 			verParametros(18);// como argumento passei o valor 18 para o metodo
 			verParametros(5);// como argumento passei o valor 5 para o metodo
@@ -33,8 +33,8 @@ public class Main {
 			break;
 		case "3":
 		case "retornos":
-			byte retorno = retornarValorInteiro();//o retorno para atribuir variaveis
-			//usar diretamente em saidas em tela syso
+			byte retorno = retornarValorInteiro();// o retorno para atribuir variaveis
+			// usar diretamente em saidas em tela syso
 			System.out.println("Esse metodo retornou " + retornarValorInteiro());
 			if (retornarValorInteiro() < 20) {// usar o retorno para logica booleana
 				System.out.println("retornou menor que 20");
@@ -44,22 +44,21 @@ public class Main {
 			break;
 		case "4":
 		case "completo":
-			calcularDivisao(4,2);//o retorna ta ai pega quem quiser nese caso ninguem nesa linha
-			operacoesCalculadora(10,3);//o retorna ta ai pega quem quiser nese caso ninguem nesa linha
-			System.out.println(operacoesCalculadora(10,3));
-			float entradaA,entradaB;
+			calcularDivisao(4, 2);// o retorna ta ai pega quem quiser nese caso ninguem nesa linha
+			operacoesCalculadora(10, 3);// o retorna ta ai pega quem quiser nese caso ninguem nesa linha
+			System.out.println(operacoesCalculadora(10, 3));
+			float entradaA, entradaB;
 			System.out.println("Informe o primeiro float");
-			entradaA= entrada.nextFloat();
+			entradaA = entrada.nextFloat();
 			System.out.println("Informe o segundo float");
-			entradaB= entrada.nextFloat();
-			float calculo = calcularDivisao(entradaA,entradaB);
-			System.out.println("resultou em "+ calculo);
+			entradaB = entrada.nextFloat();
+			float calculo = calcularDivisao(entradaA, entradaB);
+			System.out.println("resultou em " + calculo);
 			break;
 
 		case "11":
 		case "exercicio1":
-			 
-			
+
 			break;
 		default:
 			System.out.println("Não tem essa opção no menu");
@@ -127,19 +126,19 @@ public class Main {
 		System.out.println("Aqui sempre retornando 15 pq nao tenho parametos para deixar isso dinamico");
 		return variavelParaRetorno;
 	}
-	
-	public static float calcularDivisao(float numeroA,float numeroB) { 
-		System.out.println("O calculo esta sendo executado e se quiser pegue o retorno");
-		return numeroA/numeroB;
-	}
-	
-	public static String operacoesCalculadora(float numeroA,float numeroB) {
 
-		float soma=  numeroA+ numeroB;
-		float subtracao=  numeroA- numeroB;
-		float multiplicacao=  numeroA* numeroB;
-		float divisao=  numeroA/ numeroB;
-		
-		return "Executei tudo soma="+soma+" sub="+subtracao+" div="+divisao+" mult="+multiplicacao;
+	public static float calcularDivisao(float numeroA, float numeroB) {
+		System.out.println("O calculo esta sendo executado e se quiser pegue o retorno");
+		return numeroA / numeroB;
+	}
+
+	public static String operacoesCalculadora(float numeroA, float numeroB) {
+
+		float soma = numeroA + numeroB;
+		float subtracao = numeroA - numeroB;
+		float multiplicacao = numeroA * numeroB;
+		float divisao = numeroA / numeroB;
+
+		return "Executei tudo soma=" + soma + " sub=" + subtracao + " div=" + divisao + " mult=" + multiplicacao;
 	}
 }

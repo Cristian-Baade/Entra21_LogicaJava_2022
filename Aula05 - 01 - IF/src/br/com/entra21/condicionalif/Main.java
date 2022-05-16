@@ -23,10 +23,10 @@ public class Main {
 		if (idade >= 18) {// [é maior de idade?
 			System.out.println("é maior de idade");
 		}
-	
-		if( (idade>=13) && (idade<18) ) {
+
+		if ((idade >= 13) && (idade < 18)) {
 			System.out.println("é adolescente ");
 		}
-		
+
 	}
 }
